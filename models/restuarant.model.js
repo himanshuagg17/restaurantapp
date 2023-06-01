@@ -1,8 +1,6 @@
 const mongoose=require("mongoose");
 
 const RestaurantSchema=mongoose.Schema({
-    
-        _id: ObjectId,
         name: String,
         address: {
           street: String,
@@ -12,7 +10,6 @@ const RestaurantSchema=mongoose.Schema({
           zip: String
         },
         menu: [{
-          _id: ObjectId,
           name: String,
           description: String,
           price: Number,
